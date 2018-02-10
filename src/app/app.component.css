@@ -1,0 +1,13 @@
+li {
+    cursor: pointer;
+}
+.list .hint {
+    color: red;
+    font-size: smaller;
+    font-style: italic;
+    display: none;
+}
+
+.list:hover .hint{
+    display: inline;
+}

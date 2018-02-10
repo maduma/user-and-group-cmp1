@@ -1,0 +1,19 @@
+<h2>{{ itemSet.name }}</h2>
+<ul>
+  <li class="list" *ngFor="let item of itemSet.items" (click)="remove(item)">
+    <span>{{item.displayName}}</span> <span class="hint">Remove</span>
+  </li>
+</ul>
+<h2>Search Results</h2>
+<ul>
+  <li class="list" *ngFor="let item of searchResults" (click)="add(item)">
+    <span>{{item.displayName}}</span> <span class="hint">Add</span>
+  </li>
+</ul>
+<h2>Changes</h2>
+<ul>
+  <li *ngFor="let change of changes">
+    {{change.action | action}} {{change.item.displayName}}
+  </li>
+</ul>
+
